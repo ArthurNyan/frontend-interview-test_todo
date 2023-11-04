@@ -3,12 +3,12 @@ import { useDispatch } from "react-redux";
 import { useLocation } from "react-router-dom";
 
 /* APPLICATION */
-import { Modal } from "./Modal";
+import { Modal } from "../widgets/Modal/Modal";
 import { ModalHeader } from "./ModalHeader";
 import { ModalText } from "./ModalText";
 import { ModalFooter } from "./ModalFooter";
-import { tasksRemoved, tasksClearedCategories } from "../features/tasksSlice";
-import { categoriesRemoved } from "../features/categoriesSlice";
+import { tasksRemoved, tasksClearedCategories } from "../app/store/tasksSlice";
+import { categoriesRemoved } from "../app/store/categoriesSlice";
 
 interface ModalRemoveItemProps {
   item: {
@@ -41,9 +41,9 @@ export const ModalRemoveItem: React.FC<ModalRemoveItemProps> = ({
         onSubmit={
           isCategories
             ? () => {
-                dispatch(categoriesRemoved(item.id));
-                dispatch(tasksClearedCategories(item.id));
-              }
+              dispatch(categoriesRemoved(item.id));
+              dispatch(tasksClearedCategories(item.id));
+            }
             : () => dispatch(tasksRemoved(item.id))
         }
       />

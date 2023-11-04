@@ -3,11 +3,11 @@ import { useState } from "react";
 import { useSelector } from "react-redux";
 
 /* APPLICATION */
-import edit from "../icons/edit.svg";
-import remove from "../icons/remove.svg";
-import { selectAllCategories } from "../features/categoriesSlice";
-import { ModalEditItem } from "../Modal/ModalEditItem";
-import { ModalRemoveItem } from "../Modal/ModalRemoveItem";
+import edit from "../shared/assets/icons/edit.svg";
+import remove from "../shared/assets/icons/remove.svg";
+import { selectAllCategories } from "../app/store/categoriesSlice";
+import { ModalEditItem } from "../features/ModalEditItem";
+import { ModalRemoveItem } from "../features/ModalRemoveItem";
 
 interface ListItemProps {
   item: {
@@ -52,7 +52,7 @@ export const ListItem: React.FC<ListItemProps> = ({ item }) => {
           <button
             className="list-item-col2__btn"
             onClick={() => {
-              removeModalActive = true;
+              setRemoveModalActive(true);
             }}
           >
             <img src={remove} alt="remove" />

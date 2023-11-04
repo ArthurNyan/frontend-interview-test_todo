@@ -4,14 +4,14 @@ import { useDispatch } from "react-redux";
 import { useLocation } from "react-router-dom";
 
 /* APPLICATION */
-import { Modal } from "./Modal";
+import { Modal } from "../widgets/Modal/Modal";
 import { ModalHeader } from "./ModalHeader";
 import { ModalInput } from "./ModalInput";
 import { ModalRow } from "./ModalRow";
 import { ModalTextarea } from "./ModalTextarea";
 import { ModalFooter } from "./ModalFooter";
-import { tasksAdded } from "../features/tasksSlice";
-import { categoriesAdded } from "../features/categoriesSlice";
+import { tasksAdded } from "../app/store/tasksSlice";
+import { categoriesAdded } from "../app/store/categoriesSlice";
 
 interface ModalCreateItemProps {
   active: boolean;
@@ -64,19 +64,19 @@ export const ModalCreateItem: React.FC<ModalCreateItemProps> = ({
         onSubmit={
           name
             ? () => {
-                dispatch(
-                  isCategories
-                    ? categoriesAdded({ name, description })
-                    : tasksAdded({
-                        name,
-                        description,
-                        category: setSelected,
-                      })
-                );
-                clearState();
-                setActive(false);
-              }
-            : () => {}
+              dispatch(
+                isCategories
+                  ? categoriesAdded({ name, description })
+                  : tasksAdded({
+                    name,
+                    description,
+                    category: setSelected,
+                  })
+              );
+              clearState();
+              setActive(false);
+            }
+            : () => { }
         }
       />
     </Modal>

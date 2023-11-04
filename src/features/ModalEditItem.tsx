@@ -4,14 +4,14 @@ import { useDispatch } from "react-redux";
 import { useLocation } from "react-router-dom";
 
 /* APPLICATION */
-import { Modal } from "./Modal";
+import { Modal } from "../widgets/Modal/Modal";
 import { ModalHeader } from "./ModalHeader";
 import { ModalRow } from "./ModalRow";
 import { ModalInput } from "./ModalInput";
 import { ModalTextarea } from "./ModalTextarea";
 import { ModalFooter } from "./ModalFooter";
-import { tasksUpdated } from "../features/tasksSlice";
-import { categoriesUpdated } from "../features/categoriesSlice";
+import { tasksUpdated } from "../app/store/tasksSlice";
+import { categoriesUpdated } from "../app/store/categoriesSlice";
 
 interface ModalEditItemProps {
   item: {
@@ -67,11 +67,11 @@ export const ModalEditItem: React.FC<ModalEditItemProps> = ({
             isCategories
               ? categoriesUpdated({ id: item.id, name, description })
               : tasksUpdated({
-                  id: item.id,
-                  name,
-                  description,
-                  category: selected,
-                })
+                id: item.id,
+                name,
+                description,
+                category: selected,
+              })
           );
           setActive(false);
         }}
