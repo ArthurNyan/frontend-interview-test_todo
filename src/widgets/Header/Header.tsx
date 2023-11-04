@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 
 /* APPLICATION */
 import "./Header.css";
-import { ModalCreateItem } from "../../features/ModalCreateItem";
+import { ModalCreateItem } from "../ModalCreateItem";
 
 export const Header = () => {
   const { pathname } = useLocation(),

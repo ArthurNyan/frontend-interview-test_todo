@@ -6,8 +6,8 @@ import { useSelector } from "react-redux";
 import edit from "../shared/assets/icons/edit.svg";
 import remove from "../shared/assets/icons/remove.svg";
 import { selectAllCategories } from "../app/store/categoriesSlice";
-import { ModalEditItem } from "../features/ModalEditItem";
-import { ModalRemoveItem } from "../features/ModalRemoveItem";
+import { ModalEditItem } from "../widgets/ModalEditItem";
+import { ModalRemoveItem } from "../widgets/ModalRemoveItem";
 
 interface ListItemProps {
   item: {
@@ -38,7 +38,7 @@ export const ListItem: React.FC<ListItemProps> = ({ item }) => {
               </span>
             )}
           </div>
-          <div className="list-item-col1-row2">{item.description}</div>
+          <div className="list-item-col1-row2">{item.description.length > 70 ? item.description.substring(0, 70) + '...' : item.description}</div>
         </div>
         <div className="list-item-col2">
           <button

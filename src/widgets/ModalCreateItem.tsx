@@ -4,12 +4,12 @@ import { useDispatch } from "react-redux";
 import { useLocation } from "react-router-dom";
 
 /* APPLICATION */
-import { Modal } from "../widgets/Modal/Modal";
-import { ModalHeader } from "./ModalHeader";
-import { ModalInput } from "./ModalInput";
-import { ModalRow } from "./ModalRow";
-import { ModalTextarea } from "./ModalTextarea";
-import { ModalFooter } from "./ModalFooter";
+import { Modal } from "./Modal/Modal";
+import { ModalHeader } from "../features/ModalHeader";
+import { ModalInput } from "../features/ModalInput";
+import { ModalRow } from "../features/ModalRow";
+import { ModalTextarea } from "../features/ModalTextarea";
+import { ModalFooter } from "../features/ModalFooter";
 import { tasksAdded } from "../app/store/tasksSlice";
 import { categoriesAdded } from "../app/store/categoriesSlice";
 
