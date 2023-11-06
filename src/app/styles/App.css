@@ -69,3 +69,13 @@ html {
 .list-item-col2__btn:first-child {
   margin-right: 15px;
 }
+
+.sort-container {
+  box-sizing: border-box;
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  height: 80px;
+}

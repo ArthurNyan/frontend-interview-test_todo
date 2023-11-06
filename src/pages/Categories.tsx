@@ -2,17 +2,11 @@
 import { useSelector } from "react-redux";
 
 /* APPLICATION */
-import { ListItem } from "./ListItem";
 import { selectAllCategories } from "../app/store/categoriesSlice";
+import { SearchInput } from "../features/SearchInput/SearchInput";
 
 export const Categories = () => {
   const categories = useSelector(selectAllCategories);
 
-  return (
-    <ul>
-      {categories.map((category) => (
-        <ListItem key={category.id} item={category} />
-      ))}
-    </ul>
-  );
+  return <SearchInput categories={categories} />
 };
