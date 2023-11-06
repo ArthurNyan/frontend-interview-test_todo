@@ -1,8 +1,7 @@
 import { CloseIcon } from "../shared/assets/icons";
+import { SelectorProps } from "../shared/lib/SelectorProps";
 
-interface ModalHeaderProps {
-  clearState?(): void;
-  setActive: React.Dispatch<React.SetStateAction<boolean>>;
+interface ModalHeaderProps extends SelectorProps{
   title: string;
 }
 
@@ -21,7 +20,7 @@ export const ModalHeader: React.FC<ModalHeaderProps> = ({
           setActive(false);
         }}
       >
-        <CloseIcon/>
+        <CloseIcon />
       </button>
     </header>
   );

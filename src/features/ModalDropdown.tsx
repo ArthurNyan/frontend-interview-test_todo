@@ -5,13 +5,9 @@ import { useSelector } from "react-redux";
 /* APPLICATION */
 import { selectAllCategories } from "../app/store/categoriesSlice";
 import { DownIcon } from "../shared/assets/icons";
+import { SelectedProps } from "../shared/lib/SelectedProps";
 
-interface ModalDropdownProps {
-  selected: string | undefined;
-  setSelected: React.Dispatch<React.SetStateAction<string>>;
-}
-
-export const ModalDropdown: React.FC<ModalDropdownProps> = ({
+export const ModalDropdown: React.FC<SelectedProps> = ({
   selected,
   setSelected,
 }) => {

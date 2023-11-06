@@ -4,12 +4,7 @@ import { v4 as uuidv4 } from "uuid";
 
 /* APPLICATION */
 import { RootState } from "./store";
-
-export interface CategoriesState {
-  id: string;
-  name: string;
-  description: string;
-}
+import { CategoriesState } from "../../shared/lib/CategoriesState";
 
 const initialState: CategoriesState[] = [
   {

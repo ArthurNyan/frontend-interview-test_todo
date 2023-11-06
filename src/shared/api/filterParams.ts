@@ -1,4 +1,4 @@
-import { CategoriesState } from "../../app/store/categoriesSlice";
+import { CategoriesState } from "../lib/CategoriesState";
 
 export const filterParams = (searchText: string, listOfCars: CategoriesState[]) => {
     if (!searchText) {

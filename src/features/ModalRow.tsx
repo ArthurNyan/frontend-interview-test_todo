@@ -1,11 +1,10 @@
 import { ModalInput } from "./ModalInput";
 import { ModalDropdown } from "./ModalDropdown";
+import { SelectedProps } from "../shared/lib/SelectedProps";
 
-interface ModalRowProps {
+interface ModalRowProps extends SelectedProps{
   name: string;
   setName: React.Dispatch<React.SetStateAction<string>>;
-  selected: string | undefined;
-  setSelected: React.Dispatch<React.SetStateAction<string>>;
 }
 
 export const ModalRow: React.FC<ModalRowProps> = ({

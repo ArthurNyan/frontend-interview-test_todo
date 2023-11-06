@@ -4,15 +4,13 @@ import { v4 as uuidv4 } from "uuid";
 
 /* APPLICATION */
 import { RootState } from "./store";
+import { CategoriesState } from "../../shared/lib/CategoriesState";
 
-export interface TasksState {
-  id: string;
-  name: string;
-  description: string;
+export interface TaskState extends CategoriesState {
   category: string;
 }
 
-const initialState: TasksState[] = [
+const initialState: TaskState[] = [
   {
     id: "dcf6c7ea-56fe-4e36-960b-686ebf86d651",
     name: "Задача",
@@ -54,7 +52,7 @@ export const tasksSlice = createSlice({
       }
     },
     tasksRemoved: (state, action) => {
-      let rm = (el: TasksState, i: number, arr: TasksState[]) =>
+      let rm = (el: TaskState, i: number, arr: TaskState[]) =>
         el.id === action.payload,
         rmTaskIndex = state.findIndex(rm);
 

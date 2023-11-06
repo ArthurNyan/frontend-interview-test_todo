@@ -9,19 +9,9 @@ import { ModalText } from "../features/ModalText";
 import { ModalFooter } from "../features/ModalFooter";
 import { tasksRemoved, tasksClearedCategories } from "../app/store/tasksSlice";
 import { categoriesRemoved } from "../app/store/categoriesSlice";
+import { ModalItemIconProps } from "../shared/lib/ModalItemInconProps";
 
-interface ModalRemoveItemProps {
-  item: {
-    id: string;
-    name: string;
-    description: string;
-    category?: string;
-  };
-  active: boolean;
-  setActive: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-export const ModalRemoveItem: React.FC<ModalRemoveItemProps> = ({
+export const ModalRemoveItem: React.FC<ModalItemIconProps> = ({
   item,
   active,
   setActive,

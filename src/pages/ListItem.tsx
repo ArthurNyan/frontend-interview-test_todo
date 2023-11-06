@@ -8,15 +8,7 @@ import { ModalEditItem } from "../widgets/ModalEditItem";
 import { ModalRemoveItem } from "../widgets/ModalRemoveItem";
 import { EditIcon } from "../shared/assets/icons/EditIcon";
 import { RemoveIcon } from "../shared/assets/icons";
-
-interface ListItemProps {
-  item: {
-    id: string;
-    name: string;
-    description: string;
-    category?: string;
-  };
-}
+import { ListItemProps } from "../shared/lib/ListItemProps";
 
 export const ListItem: React.FC<ListItemProps> = ({ item }) => {
   const categories = useSelector(selectAllCategories),

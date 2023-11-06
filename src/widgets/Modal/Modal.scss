@@ -85,12 +85,10 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 46px;
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+  }
 }
-
-.modalinput::placeholder {
-  color: rgba(0, 0, 0, 0.5);
-}
-
 .modalinput-wrapper {
   box-sizing: border-box;
   width: 364px;
@@ -100,10 +98,9 @@
 
 .modalinput-wrapper.large {
   width: 100%;
-}
-
-.modalinput:focus {
-  outline: none;
+  &:focus {
+    outline: none;
+  }
 }
 
 [for="modalinput"],

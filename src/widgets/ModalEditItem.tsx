@@ -12,19 +12,9 @@ import { ModalTextarea } from "../features/ModalTextarea";
 import { ModalFooter } from "../features/ModalFooter";
 import { tasksUpdated } from "../app/store/tasksSlice";
 import { categoriesUpdated } from "../app/store/categoriesSlice";
+import { ModalItemIconProps } from "../shared/lib/ModalItemInconProps";
 
-interface ModalEditItemProps {
-  item: {
-    id: string;
-    name: string;
-    description: string;
-    category?: string;
-  };
-  active: boolean;
-  setActive: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-export const ModalEditItem: React.FC<ModalEditItemProps> = ({
+export const ModalEditItem: React.FC<ModalItemIconProps> = ({
   item,
   active,
   setActive,
@@ -37,7 +27,7 @@ export const ModalEditItem: React.FC<ModalEditItemProps> = ({
     [description, setDescription] = useState(item.description);
 
   return (
-    <Modal item={item} active={active} setActive={setActive}>
+    <Modal item={item} active={active} setActive={setActive} >
       <ModalHeader
         setActive={setActive}
         title={

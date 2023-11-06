@@ -1,8 +1,7 @@
+import { SelectorProps } from "../shared/lib/SelectorProps";
 import { ModalBtn } from "./ModalBtn/ModalBtn";
 
-interface ModalFooterProps {
-  clearState?(): void;
-  setActive: React.Dispatch<React.SetStateAction<boolean>>;
+interface ModalFooterProps extends SelectorProps{
   submitBtnText: string;
   size?: string;
   onSubmit: () => void;

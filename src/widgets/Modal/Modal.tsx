@@ -2,17 +2,16 @@
 import React from "react";
 
 /* APPLICATION */
-import "./Modal.css";
+import "./Modal.scss";
+import { ModalCreateItemProps } from "../../shared/lib/ModalCreateItemProps";
 
-interface ModalProps {
+interface ModalProps extends ModalCreateItemProps{
   item?: {
     id: string;
     name: string;
     description: string;
     category?: string;
   };
-  active: boolean;
-  setActive: React.Dispatch<React.SetStateAction<boolean>>;
   children: React.ReactNode;
   clearState?(): void;
 }

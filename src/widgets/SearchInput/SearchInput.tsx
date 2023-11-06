@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react"
-import { CategoriesState } from "../../app/store/categoriesSlice"
 import { ModalInput } from "../../features/ModalInput"
 import { ListItem } from "../../pages/ListItem"
-import { filterParams } from "../../shared/lib/filterParams"
+import { filterParams } from "../../shared/api/filterParams"
+import { CategoriesState } from "../../shared/lib/CategoriesState"
 
 export const SearchInput = ({ categories }: { categories: CategoriesState[] }) => {
     const [name, setName] = useState('')
