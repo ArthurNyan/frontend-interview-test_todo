@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { CategoriesState } from "../../app/store/categoriesSlice"
-import { ModalInput } from "../ModalInput"
+import { ModalInput } from "../../features/ModalInput"
 import { ListItem } from "../../pages/ListItem"
 import { filterParams } from "../../shared/lib/filterParams"
 
