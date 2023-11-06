@@ -2,18 +2,14 @@
 import { useSelector } from "react-redux";
 
 /* APPLICATION */
-import { ListItem } from "./ListItem";
 import { selectAllTasks } from "../app/store/tasksSlice";
+import { SearchInput } from "../features/SearchInput/SearchInput";
 
 export const Tasks: React.FC = () => {
   const tasks = useSelector(selectAllTasks);
 
   return (
-    <ul>
-      {tasks.map((task) => (
-        <ListItem key={task.id} item={task} />
-      ))}
-    </ul>
+    <SearchInput categories={tasks}/>
   );
 };
 

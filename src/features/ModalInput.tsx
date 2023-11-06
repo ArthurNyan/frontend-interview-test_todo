@@ -1,4 +1,5 @@
-import important from "../shared/assets/icons/important.svg";
+import { ImportantIcon } from "../shared/assets/icons";
+
 
 interface ModalInputProps {
   name: string;
@@ -27,7 +28,7 @@ export const ModalInput: React.FC<ModalInputProps> = ({
         onChange={(e) => setName(e.target.value)}
       />
       {label && <>
-        <img src={important} alt="important" className="modalinput-icon" />
+        <ImportantIcon/>
         <label htmlFor="modalinput">Имя</label>
       </>}
     </div>

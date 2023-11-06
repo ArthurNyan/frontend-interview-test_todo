@@ -1,4 +1,4 @@
-import close from "../shared/assets/icons/close.svg";
+import { CloseIcon } from "../shared/assets/icons";
 
 interface ModalHeaderProps {
   clearState?(): void;
@@ -21,7 +21,7 @@ export const ModalHeader: React.FC<ModalHeaderProps> = ({
           setActive(false);
         }}
       >
-        <img src={close} alt="close" />
+        <CloseIcon/>
       </button>
     </header>
   );

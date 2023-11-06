@@ -3,8 +3,8 @@ import { useState } from "react";
 import { useSelector } from "react-redux";
 
 /* APPLICATION */
-import down from "../shared/assets/icons/down.svg";
 import { selectAllCategories } from "../app/store/categoriesSlice";
+import { DownIcon } from "../shared/assets/icons";
 
 interface ModalDropdownProps {
   selected: string | undefined;
@@ -24,7 +24,7 @@ export const ModalDropdown: React.FC<ModalDropdownProps> = ({
       <div className={selected ? "dropdown-btn" : "dropdown-btn placeholder"}>
         {options.find((option) => option.id === selected)?.name ||
           "Выберите категорию"}
-        <img src={down} alt="open dropdown" />
+        <DownIcon/>
       </div>
       {isActive && (
         <div className="dropdown-content">
