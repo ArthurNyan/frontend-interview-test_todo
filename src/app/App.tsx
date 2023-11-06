@@ -2,7 +2,7 @@
 import { Route, Routes } from "react-router-dom";
 
 /* APPLICATION */
-import "./styles/App.css";
+import "./styles";
 import { Header } from "../widgets/Header/Header";
 import { Tasks } from "../pages/Tasks";
 import { Categories } from "../pages/Categories";

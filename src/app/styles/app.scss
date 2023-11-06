@@ -12,10 +12,9 @@ html {
   width: 1000px;
   height: 80px;
   border-bottom: 2px solid #3f72af;
-}
-
-.list-item:hover {
-  background-color: rgba(37, 127, 234, 0.2);
+  &:hover {
+    background-color: rgba(37, 127, 234, 0.2);
+  }
 }
 
 .list-item-col1 {
@@ -44,7 +43,7 @@ html {
 }
 
 .list-item-col1-row1__category::before {
-  content: url("../../shared/assets/icons/FolderIcon.tsx");
+  content: url("../../shared/assets/icons/folder.svg");
   margin-right: 4px;
   position: relative;
   top: 3px;
@@ -69,6 +68,8 @@ html {
 .list-item-col2__btn:first-child {
   margin-right: 15px;
 }
+
+/* Container */
 
 .sort-container {
   box-sizing: border-box;
