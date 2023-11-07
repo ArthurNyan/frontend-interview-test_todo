@@ -1,4 +1,4 @@
-import { ImportantIcon } from "../shared/assets/icons";
+import { ImportantIcon } from "../../shared/assets/icons";
 
 
 interface ModalInputProps {
@@ -28,7 +28,7 @@ export const ModalInput: React.FC<ModalInputProps> = ({
         onChange={(e) => setName(e.target.value)}
       />
       {label && <>
-        <ImportantIcon/>
+        <ImportantIcon />
         <label htmlFor="modalinput">Имя</label>
       </>}
     </div>

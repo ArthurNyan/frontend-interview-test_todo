@@ -1,4 +1,4 @@
-import "./ModalBtn.css";
+import "./ModalBtn.scss";
 
 interface ModalBtnProps {
   type?: string;

@@ -3,8 +3,8 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 /* APPLICATION */
-import "./Header.css";
-import { ModalCreateItem } from "../ModalCreateItem";
+import "./Header.scss";
+import { ModalCreateItem } from "../ModalCreateItem/ModalCreateItem";
 
 export const Header = () => {
   const { pathname } = useLocation(),

@@ -4,8 +4,8 @@ import { useSelector } from "react-redux";
 
 /* APPLICATION */
 import { selectAllCategories } from "../app/store/categoriesSlice";
-import { ModalEditItem } from "../widgets/ModalEditItem";
-import { ModalRemoveItem } from "../widgets/ModalRemoveItem";
+import { ModalEditItem } from "../widgets/ModalEditItem/ModalEditItem";
+import { ModalRemoveItem } from "../widgets/ModalRemoveItem/ModalRemoveItem";
 import { EditIcon } from "../shared/assets/icons/EditIcon";
 import { RemoveIcon } from "../shared/assets/icons";
 import { ListItemProps } from "../shared/lib/ListItemProps";
@@ -47,7 +47,7 @@ export const ListItem: React.FC<ListItemProps> = ({ item }) => {
               setRemoveModalActive(true);
             }}
           >
-            <RemoveIcon/>
+            <RemoveIcon />
           </button>
         </div>
         <ModalEditItem

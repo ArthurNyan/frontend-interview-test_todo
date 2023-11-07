@@ -1,7 +1,7 @@
-import { SelectorProps } from "../shared/lib/SelectorProps";
-import { ModalBtn } from "./ModalBtn/ModalBtn";
+import { SelectorProps } from "../../shared/lib/SelectorProps";
+import { ModalBtn } from "../ModalBtn/ModalBtn";
 
-interface ModalFooterProps extends SelectorProps{
+interface ModalFooterProps extends SelectorProps {
   submitBtnText: string;
   size?: string;
   onSubmit: () => void;

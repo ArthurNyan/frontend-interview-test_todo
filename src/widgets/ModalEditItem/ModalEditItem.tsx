@@ -4,15 +4,15 @@ import { useDispatch } from "react-redux";
 import { useLocation } from "react-router-dom";
 
 /* APPLICATION */
-import { Modal } from "./Modal/Modal";
-import { ModalHeader } from "../features/ModalHeader";
-import { ModalRow } from "../features/ModalRow";
-import { ModalInput } from "../features/ModalInput";
-import { ModalTextarea } from "../features/ModalTextarea";
-import { ModalFooter } from "../features/ModalFooter";
-import { tasksUpdated } from "../app/store/tasksSlice";
-import { categoriesUpdated } from "../app/store/categoriesSlice";
-import { ModalItemIconProps } from "../shared/lib/ModalItemInconProps";
+import { Modal } from "../Modal/Modal";
+import { ModalHeader } from "../../features/ModalHeader/ModalHeader";
+import { ModalRow } from "../../features/ModalRow/ModalRow";
+import { ModalInput } from "../../features/ModalInput/ModalInput";
+import { ModalTextarea } from "../../features/ModalTextarea/ModalTextarea";
+import { ModalFooter } from "../../features/ModalFooter/ModalFooter";
+import { tasksUpdated } from "../../app/store/tasksSlice";
+import { categoriesUpdated } from "../../app/store/categoriesSlice";
+import { ModalItemIconProps } from "../../shared/lib/ModalItemInconProps";
 
 export const ModalEditItem: React.FC<ModalItemIconProps> = ({
   item,

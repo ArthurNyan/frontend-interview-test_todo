@@ -4,15 +4,15 @@ import { useDispatch } from "react-redux";
 import { useLocation } from "react-router-dom";
 
 /* APPLICATION */
-import { Modal } from "./Modal/Modal";
-import { ModalHeader } from "../features/ModalHeader";
-import { ModalInput } from "../features/ModalInput";
-import { ModalRow } from "../features/ModalRow";
-import { ModalTextarea } from "../features/ModalTextarea";
-import { ModalFooter } from "../features/ModalFooter";
-import { tasksAdded } from "../app/store/tasksSlice";
-import { categoriesAdded } from "../app/store/categoriesSlice";
-import { ModalCreateItemProps } from "../shared/lib/ModalCreateItemProps";
+import { Modal } from "../Modal/Modal";
+import { ModalHeader } from "../../features/ModalHeader/ModalHeader";
+import { ModalInput } from "../../features/ModalInput/ModalInput";
+import { ModalRow } from "../../features/ModalRow/ModalRow";
+import { ModalTextarea } from "../../features/ModalTextarea/ModalTextarea";
+import { ModalFooter } from "../../features/ModalFooter/ModalFooter";
+import { tasksAdded } from "../../app/store/tasksSlice";
+import { categoriesAdded } from "../../app/store/categoriesSlice";
+import { ModalCreateItemProps } from "../../shared/lib/ModalCreateItemProps";
 
 export const ModalCreateItem: React.FC<ModalCreateItemProps> = ({
   active,

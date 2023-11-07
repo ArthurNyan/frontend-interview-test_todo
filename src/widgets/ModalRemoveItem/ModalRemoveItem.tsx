@@ -3,13 +3,13 @@ import { useDispatch } from "react-redux";
 import { useLocation } from "react-router-dom";
 
 /* APPLICATION */
-import { Modal } from "./Modal/Modal";
-import { ModalHeader } from "../features/ModalHeader";
-import { ModalText } from "../features/ModalText";
-import { ModalFooter } from "../features/ModalFooter";
-import { tasksRemoved, tasksClearedCategories } from "../app/store/tasksSlice";
-import { categoriesRemoved } from "../app/store/categoriesSlice";
-import { ModalItemIconProps } from "../shared/lib/ModalItemInconProps";
+import { Modal } from "../Modal/Modal";
+import { ModalHeader } from "../../features/ModalHeader/ModalHeader";
+import { ModalText } from "../../features/ModalText/ModalText";
+import { ModalFooter } from "../../features/ModalFooter/ModalFooter";
+import { tasksRemoved, tasksClearedCategories } from "../../app/store/tasksSlice";
+import { categoriesRemoved } from "../../app/store/categoriesSlice";
+import { ModalItemIconProps } from "../../shared/lib/ModalItemInconProps";
 
 export const ModalRemoveItem: React.FC<ModalItemIconProps> = ({
   item,

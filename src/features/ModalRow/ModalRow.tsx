@@ -1,8 +1,8 @@
-import { ModalInput } from "./ModalInput";
-import { ModalDropdown } from "./ModalDropdown";
-import { SelectedProps } from "../shared/lib/SelectedProps";
+import { ModalInput } from "../ModalInput/ModalInput";
+import { ModalDropdown } from "../ModalDropdown/ModalDropdown";
+import { SelectedProps } from "../../shared/lib/SelectedProps";
 
-interface ModalRowProps extends SelectedProps{
+interface ModalRowProps extends SelectedProps {
   name: string;
   setName: React.Dispatch<React.SetStateAction<string>>;
 }

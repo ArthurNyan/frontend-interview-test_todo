@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { ModalInput } from "../../features/ModalInput"
+import { ModalInput } from "../../features/ModalInput/ModalInput"
 import { ListItem } from "../../pages/ListItem"
 import { filterParams } from "../../shared/api/filterParams"
 import { CategoriesState } from "../../shared/lib/CategoriesState"

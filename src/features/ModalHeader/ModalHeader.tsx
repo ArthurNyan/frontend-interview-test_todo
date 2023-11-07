@@ -1,7 +1,7 @@
-import { CloseIcon } from "../shared/assets/icons";
-import { SelectorProps } from "../shared/lib/SelectorProps";
+import { CloseIcon } from "../../shared/assets/icons";
+import { SelectorProps } from "../../shared/lib/SelectorProps";
 
-interface ModalHeaderProps extends SelectorProps{
+interface ModalHeaderProps extends SelectorProps {
   title: string;
 }
 

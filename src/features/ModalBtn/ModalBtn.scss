@@ -10,10 +10,9 @@
   background: transparent;
   border-radius: 4px;
   cursor: pointer;
-}
-
-.modalbtn:first-child {
-  margin-right: 24px;
+  &:first-child {
+    margin-right: 24px;
+  }
 }
 
 .modalbtn.primary {
