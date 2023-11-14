@@ -1,4 +1,44 @@
-# Getting Started with Create React App
+<h1 align="center">
+  Tasks application
+  <br>
+</h1>
+<h2 align="center">
+   <br>
+      TS | React | Redux toolkit | Material UI | Vite | FSD
+   </br>
+</h2>
+
+## How To Use
+
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/ArthurNyan/Integral-calculator.git
+
+# Go into the repository
+$ cd integral-calculator
+
+# Install dependencies
+$ npm install
+
+# Run the app
+$ npm start
+```
+
+> **Note**
+> If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
+
+## Support
+
+<a href="https://www.buymeacoffee.com/webdvlp" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee"></a>
+
+---
+
+<a href="https://t.me/ArthurNyan" target="_blank" rel="noreferrer"><img src="https://www.svgrepo.com/download/354443/telegram.svg" width="36" height="36" alt="Telegram" /></a>
+<a href="https://vk.com/arthurdev" target="_blank" rel="noreferrer"><img src="https://www.svgrepo.com/download/331634/vk-v2.svg" width="36" height="36" alt="Telegram" /></a>
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
 
@@ -43,4 +83,4 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To learn React, check out the [React documentation](https://reactjs.org/). -->
